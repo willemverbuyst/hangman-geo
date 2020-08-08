@@ -1,0 +1,68 @@
+/* BASE STYLES */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(61, 60, 60);
+  color: #fff;
+  font-family: 'Merriweather';
+  margin: 0;
+  text-align: center;
+}
+
+input:focus,
+button:focus,
+select:focus {
+  border: none;
+  outline: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.872rem;
+}
+
+/* HEADER */
+
+.header {
+  height: 12rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(51, 50, 50, 0.8);
+}
+
+.header__hangman {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f8d405;
+  font-size: 4.8rem;
+  font-weight: 800;
+  transform: skewY(-6deg);
+  line-height: 1;
+  margin-left: 3rem;
+}
+
+.header__logo-1 {
+  font-size: 3.2rem;
+}
