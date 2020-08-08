@@ -44,8 +44,10 @@ h3 {
 
 .header {
   height: 12rem;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: center;
   background-color: rgba(51, 50, 50, 0.8);
 }
 
@@ -65,4 +67,38 @@ h3 {
 
 .header__logo-1 {
   font-size: 3.2rem;
+}
+
+.header__continent {
+  align-self: center;
+}
+
+.header__selector {
+  cursor: pointer;
+  width: 20rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #ab0c78;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header__instructions {
+  // align-self: center;
+  justify-self: end;
+  height: 100%;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c9c5c5;
+  font-size: 3.6rem;
+  font-weight: 800;
+  cursor: pointer;
 }
